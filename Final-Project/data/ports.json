@@ -1,0 +1,602 @@
+ports=`[
+ {
+   "NAME": "Unalaska Island, AK",
+   "Location": "-168.938199999711,53.759610000021"
+ },
+ {
+   "NAME": "Kahului, Maui, HI",
+   "Location": "-156.47280000002,20.8986100003802"
+ },
+ {
+   "NAME": "Kawaihae Harbor, HI",
+   "Location": "-155.833299999682,20.0377800000679"
+ },
+ {
+   "NAME": "Nawiliwili, Kauai, HI",
+   "Location": "-159.353099999734,21.9611099998275"
+ },
+ {
+   "NAME": "Barbers Point, Oahu, HI",
+   "Location": "-158.108900000138,21.2972299999836"
+ },
+ {
+   "NAME": "Honolulu, HI",
+   "Location": "-157.871700000283,21.3111099999122"
+ },
+ {
+   "NAME": "Hilo, HI",
+   "Location": "-155.075800000364,19.7286099998223"
+ },
+ {
+   "NAME": "Nikishka, AK",
+   "Location": "-151.314400000092,60.7479299999895"
+ },
+ {
+   "NAME": "Anchorage, AK",
+   "Location": "-149.89500000038,61.2377800000864"
+ },
+ {
+   "NAME": "Valdez, AK",
+   "Location": "-146.346399999742,61.1247300001308"
+ },
+ {
+   "NAME": "Kivilina, AK",
+   "Location": "-164.538900000132,67.719179999985"
+ },
+ {
+   "NAME": "San Diego, CA",
+   "Location": "-117.178400000265,32.7082099997638"
+ },
+ {
+   "NAME": "Redwood City, CA",
+   "Location": "-122.214011999613,37.5053600002696"
+ },
+ {
+   "NAME": "San Francisco, CA",
+   "Location": "-122.39904199978,37.8066649996593"
+ },
+ {
+   "NAME": "Oakland, CA",
+   "Location": "-122.308100000065,37.8215200000558"
+ },
+ {
+   "NAME": "Richmond, CA",
+   "Location": "-122.374233000203,37.9242370002206"
+ },
+ {
+   "NAME": "Port Hueneme, CA",
+   "Location": "-119.208474999617,34.1482440003587"
+ },
+ {
+   "NAME": "Los Angeles, CA",
+   "Location": "-118.241000000113,33.7772800000027"
+ },
+ {
+   "NAME": "Long Beach, CA",
+   "Location": "-118.209499999753,33.7395700000564"
+ },
+ {
+   "NAME": "Stockton, CA",
+   "Location": "-121.315600000176,37.9526999999027"
+ },
+ {
+   "NAME": "Coos Bay, OR",
+   "Location": "-124.209500000116,43.3635100002799"
+ },
+ {
+   "NAME": "Kalama, WA",
+   "Location": "-122.862799999678,46.0204799998429"
+ },
+ {
+   "NAME": "Portland, OR",
+   "Location": "-122.665299999963,45.4788100002579"
+ },
+ {
+   "NAME": "Vancouver, WA",
+   "Location": "-122.680599999881,45.622440000046"
+ },
+ {
+   "NAME": "Grays Harbor, WA",
+   "Location": "-124.176146000079,46.9041559999453"
+ },
+ {
+   "NAME": "Longview, WA",
+   "Location": "-122.91400000032,46.1422199998008"
+ },
+ {
+   "NAME": "Olympia, WA",
+   "Location": "-122.908900000347,47.0682699999842"
+ },
+ {
+   "NAME": "Tacoma, WA",
+   "Location": "-122.451500000247,47.2896600001166"
+ },
+ {
+   "NAME": "Seattle, WA",
+   "Location": "-122.359217999792,47.5877110002579"
+ },
+ {
+   "NAME": "Everett, WA",
+   "Location": "-122.229400000293,47.9847600000302"
+ },
+ {
+   "NAME": "Anacortes, WA",
+   "Location": "-122.599610000414,48.4959430002692"
+ },
+ {
+   "NAME": "Ketchikan, AK",
+   "Location": "-131.64999999969,55.3419299998331"
+ },
+ {
+   "NAME": "Brownsville, TX",
+   "Location": "-97.3981380002426,25.9522010001837"
+ },
+ {
+   "NAME": "Corpus Christi, TX",
+   "Location": "-97.3978899996472,27.8127700000018"
+ },
+ {
+   "NAME": "Victoria, TX",
+   "Location": "-96.9724700003054,28.6913100001495"
+ },
+ {
+   "NAME": "Matagorda Port Lv Pt Com, TX",
+   "Location": "-96.5641199999949,28.5954000003701"
+ },
+ {
+   "NAME": "Freeport, TX",
+   "Location": "-95.3707000000175,28.9613300002362"
+ },
+ {
+   "NAME": "Galveston, TX",
+   "Location": "-94.8126999996819,29.3104900003245"
+ },
+ {
+   "NAME": "Houston, TX",
+   "Location": "-95.293679000021,29.7470230003886"
+ },
+ {
+   "NAME": "Texas City, TX",
+   "Location": "-94.9180910000934,29.3630679998078"
+ },
+ {
+   "NAME": "Port Arthur, TX",
+   "Location": "-93.9606900001381,29.8314200000851"
+ },
+ {
+   "NAME": "Beaumont, TX",
+   "Location": "-94.0881119996362,30.0871630003696"
+ },
+ {
+   "NAME": "Orange, TX",
+   "Location": "-93.8183150001532,30.0454879996401"
+ },
+ {
+   "NAME": "Lake Charles, LA",
+   "Location": "-93.286839000053,30.1064059998878"
+ },
+ {
+   "NAME": "Central Louisiana Regional Port",
+   "Location": "-92.4406740002964,31.3120830001126"
+ },
+ {
+   "NAME": "Port Fourchon, LA",
+   "Location": "-90.2052789995942,29.1219449997125"
+ },
+ {
+   "NAME": "Iberia, LA",
+   "Location": "-91.8437949998041,29.9373139999929"
+ },
+ {
+   "NAME": "Terrebonne, LA, Port of",
+   "Location": "-90.6590509998076,29.5790700000438"
+ },
+ {
+   "NAME": "South Louisiana, LA, Port of",
+   "Location": "-90.6179399996819,30.0334500003297"
+ },
+ {
+   "NAME": "Baton Rouge, LA",
+   "Location": "-91.1993400001561,30.4229200000794"
+ },
+ {
+   "NAME": "Natchez, MS",
+   "Location": "-91.4307320000336,31.5472379999015"
+ },
+ {
+   "NAME": "Vicksburg, MS",
+   "Location": "-90.9005599997897,32.3346999998967"
+ },
+ {
+   "NAME": "Lake Providence, LA",
+   "Location": "-91.1536100002816,32.7947199999152"
+ },
+ {
+   "NAME": "Greenville, MS",
+   "Location": "-91.1268690003113,33.3592319997794"
+ },
+ {
+   "NAME": "Plaquemines, LA, Port of",
+   "Location": "-89.6874470001014,29.480003999785"
+ },
+ {
+   "NAME": "New Orleans, LA",
+   "Location": "-90.0852559999848,29.9141400001375"
+ },
+ {
+   "NAME": "Gulfport, MS",
+   "Location": "-89.0853300004425,30.3521599997806"
+ },
+ {
+   "NAME": "Pascagoula, MS",
+   "Location": "-88.5587900002834,30.3480200001958"
+ },
+ {
+   "NAME": "Mobile, AL",
+   "Location": "-88.0411300003198,30.7252700000066"
+ },
+ {
+   "NAME": "Panama City, FL",
+   "Location": "-84.1992600002655,30.1900900002166"
+ },
+ {
+   "NAME": "Port Manatee, FL",
+   "Location": "-82.6027099996007,27.6599999997997"
+ },
+ {
+   "NAME": "Tampa, FL",
+   "Location": "-82.5223500003207,27.7853400001281"
+ },
+ {
+   "NAME": "Miami, FL",
+   "Location": "-80.1816419999231,25.7828620001811"
+ },
+ {
+   "NAME": "Port Everglades, FL",
+   "Location": "-80.1178010000285,26.0933920000716"
+ },
+ {
+   "NAME": "Palm Beach, FL",
+   "Location": "-80.052669999623,26.7690399998369"
+ },
+ {
+   "NAME": "Port Canaveral, FL",
+   "Location": "-80.6081500001095,28.4140900000608"
+ },
+ {
+   "NAME": "Jacksonville, FL",
+   "Location": "-81.6651250002782,30.3227569998106"
+ },
+ {
+   "NAME": "Brunswick, GA",
+   "Location": "-81.4998799998841,31.158559999745"
+ },
+ {
+   "NAME": "Savannah, GA",
+   "Location": "-81.0953819997664,32.0847110002161"
+ },
+ {
+   "NAME": "Charleston, SC",
+   "Location": "-79.9215950001236,32.7887809999605"
+ },
+ {
+   "NAME": "Tulsa, Port of Catoosa, OK",
+   "Location": "-95.7400199996602,36.2182000000033"
+ },
+ {
+   "NAME": "Kansas City, MO",
+   "Location": "-94.6076200003277,39.1150000001936"
+ },
+ {
+   "NAME": "St. Paul, MN",
+   "Location": "-93.0619000004083,44.9515699998036"
+ },
+ {
+   "NAME": "Rosedale, MS",
+   "Location": "-91.0220600004061,33.8135510000984"
+ },
+ {
+   "NAME": "Helena, AR",
+   "Location": "-90.5832299999103,34.5218600003658"
+ },
+ {
+   "NAME": "Memphis, TN",
+   "Location": "-90.0619799996947,35.1817699997525"
+ },
+ {
+   "NAME": "New Madrid County, MO, Port of",
+   "Location": "-89.5686599996779,36.5268369997316"
+ },
+ {
+   "NAME": "Hickman-Fulton County Riverport, KY",
+   "Location": "-89.205352000227,36.5815440003402"
+ },
+ {
+   "NAME": "Paducah-McCracken County Riverport, KY",
+   "Location": "-88.6931770002005,37.1292759997351"
+ },
+ {
+   "NAME": "St. Louis, MO and IL",
+   "Location": "-90.2296100002186,38.5695400001955"
+ },
+ {
+   "NAME": "Southeast Missouri Port, MO",
+   "Location": "-89.9348800004118,37.9733200002118"
+ },
+ {
+   "NAME": "Kaskaskia, IL, Port of",
+   "Location": "-90.0461459998494,38.143331999701"
+ },
+ {
+   "NAME": "Guntersville, AL",
+   "Location": "-86.2875059996269,34.3739040000696"
+ },
+ {
+   "NAME": "Nashville, TN",
+   "Location": "-86.7746700004101,36.1651300002674"
+ },
+ {
+   "NAME": "Chattanooga, TN",
+   "Location": "-85.3268199999164,35.0244799999378"
+ },
+ {
+   "NAME": "Mount Vernon, IN",
+   "Location": "-87.8750000003691,37.9220800001134"
+ },
+ {
+   "NAME": "Henderson County Riverport, KY",
+   "Location": "-87.5937779998289,37.8426850002098"
+ },
+ {
+   "NAME": "Owensboro, KY",
+   "Location": "-87.1116879999774,37.7763669998744"
+ },
+ {
+   "NAME": "Chicago, IL",
+   "Location": "-87.6379899995868,41.8866200001231"
+ },
+ {
+   "NAME": "Indiana Harbor, IN",
+   "Location": "-87.4454700001933,41.6758599998975"
+ },
+ {
+   "NAME": "Buffington, IN",
+   "Location": "-87.4161399998786,41.6452299999659"
+ },
+ {
+   "NAME": "Gary, IN",
+   "Location": "-87.3251300003915,41.6120200001357"
+ },
+ {
+   "NAME": "Burns Waterway Harbor, IN",
+   "Location": "-87.1552100001723,41.6432499998925"
+ },
+ {
+   "NAME": "Louisville, KY",
+   "Location": "-85.7609930001303,38.2614700001044"
+ },
+ {
+   "NAME": "Cincinnati-Northern KY, Ports of",
+   "Location": "-84.504499999639,39.0940300002736"
+ },
+ {
+   "NAME": "Duluth-Superior, MN and WI",
+   "Location": "-92.0964079995547,46.7783620000787"
+ },
+ {
+   "NAME": "Two Harbors, MN",
+   "Location": "-91.6626100001579,47.0042800003041"
+ },
+ {
+   "NAME": "Silver Bay, MN",
+   "Location": "-91.2563880000593,47.2942079999856"
+ },
+ {
+   "NAME": "Milwaukee, WI",
+   "Location": "-87.8996700000289,42.9882400000043"
+ },
+ {
+   "NAME": "Grand Haven, MI",
+   "Location": "-86.2355700002902,43.0669400000375"
+ },
+ {
+   "NAME": "Green Bay, WI",
+   "Location": "-88.0181179996203,44.516215000001"
+ },
+ {
+   "NAME": "Port Inland, MI",
+   "Location": "-85.8627900000918,45.9550799999043"
+ },
+ {
+   "NAME": "Port Dolomite, MI",
+   "Location": "-84.3128100004489,45.9913900002601"
+ },
+ {
+   "NAME": "Presque Isle, MI",
+   "Location": "-87.385165999949,46.5773669999017"
+ },
+ {
+   "NAME": "Marquette, MI",
+   "Location": "-87.2870300003845,46.5111299998467"
+ },
+ {
+   "NAME": "Huntington - Tristate",
+   "Location": "-82.4199800000737,38.4336100001653"
+ },
+ {
+   "NAME": "Toledo, OH",
+   "Location": "-83.5075099998724,41.6629400002867"
+ },
+ {
+   "NAME": "Monroe, MI",
+   "Location": "-83.3906089998116,41.9151339999256"
+ },
+ {
+   "NAME": "Sandusky, OH",
+   "Location": "-82.7122700003974,41.470219999859"
+ },
+ {
+   "NAME": "Marblehead, OH",
+   "Location": "-82.709060000087,41.5296200001913"
+ },
+ {
+   "NAME": "Cleveland, OH",
+   "Location": "-81.6719099998736,41.4785199999352"
+ },
+ {
+   "NAME": "Fairport Harbor, OH",
+   "Location": "-81.2940699998856,41.7666599996879"
+ },
+ {
+   "NAME": "Ashtabula, OH",
+   "Location": "-80.7917199998856,41.9187300001728"
+ },
+ {
+   "NAME": "Pittsburgh, PA",
+   "Location": "-80.016120000418,40.4423400002865"
+ },
+ {
+   "NAME": "Wilmington, NC",
+   "Location": "-77.9539539999796,34.2392780001031"
+ },
+ {
+   "NAME": "Morehead City, NC",
+   "Location": "-76.7242099998546,34.7169299999918"
+ },
+ {
+   "NAME": "Virginia, VA, Port of",
+   "Location": "-76.3117399995626,36.8664200001208"
+ },
+ {
+   "NAME": "Baltimore, MD",
+   "Location": "-76.5171200002892,39.2089900003406"
+ },
+ {
+   "NAME": "New Castle, DE",
+   "Location": "-75.5615799996837,39.6566800001109"
+ },
+ {
+   "NAME": "Wilmington, DE",
+   "Location": "-75.5069699996139,39.7158899996569"
+ },
+ {
+   "NAME": "Detroit, MI",
+   "Location": "-83.1095860003613,42.2690940002602"
+ },
+ {
+   "NAME": "St. Clair, MI",
+   "Location": "-82.4941299996936,42.8266300000971"
+ },
+ {
+   "NAME": "Alpena, MI",
+   "Location": "-83.4222699998295,45.055600000025"
+ },
+ {
+   "NAME": "Calcite, MI",
+   "Location": "-83.7755999999913,45.3929300001822"
+ },
+ {
+   "NAME": "Stoneport, MI",
+   "Location": "-83.4207810000252,45.2984550001915"
+ },
+ {
+   "NAME": "Drummond Island, MI",
+   "Location": "-83.8855599999228,45.9924499999961"
+ },
+ {
+   "NAME": "Conneaut, OH",
+   "Location": "-80.5485999999005,41.9667100002621"
+ },
+ {
+   "NAME": "Marcus Hook, PA",
+   "Location": "-75.4042400004151,39.815439999928"
+ },
+ {
+   "NAME": "Paulsboro, NJ",
+   "Location": "-75.226549999688,39.8268900001561"
+ },
+ {
+   "NAME": "Chester, PA",
+   "Location": "-75.3221999997385,39.8542300002067"
+ },
+ {
+   "NAME": "Philadelphia, PA",
+   "Location": "-75.2021910003728,39.9188199999933"
+ },
+ {
+   "NAME": "Camden-Gloucester, NJ",
+   "Location": "-75.1043200002239,39.9430500000514"
+ },
+ {
+   "NAME": "Penn Manor, PA",
+   "Location": "-74.7408100002083,40.1359800000798"
+ },
+ {
+   "NAME": "New York, NY and NJ",
+   "Location": "-74.0383569999048,40.6739490002272"
+ },
+ {
+   "NAME": "Bridgeport, CT",
+   "Location": "-73.1788599997103,41.1720000003289"
+ },
+ {
+   "NAME": "Port Jefferson, NY",
+   "Location": "-73.0721600003179,40.9488100002227"
+ },
+ {
+   "NAME": "New Haven, CT",
+   "Location": "-72.9047299998105,41.2988299998418"
+ },
+ {
+   "NAME": "Providence, RI",
+   "Location": "-71.3984399996937,41.8117800000396"
+ },
+ {
+   "NAME": "Albany, NY",
+   "Location": "-73.7481599996329,42.6427099999428"
+ },
+ {
+   "NAME": "Boston, MA",
+   "Location": "-71.0522900000359,42.3509390002446"
+ },
+ {
+   "NAME": "Portsmouth, NH",
+   "Location": "-70.7380599999638,43.0739799997705"
+ },
+ {
+   "NAME": "Portland, ME",
+   "Location": "-70.2513399995946,43.6495099997628"
+ },
+ {
+   "NAME": "Searsport, ME",
+   "Location": "-68.9249699996258,44.4528499999209"
+ },
+ {
+   "NAME": "Ponce, PR",
+   "Location": "-66.6209960003529,17.9786130000851"
+ },
+ {
+   "NAME": "San Juan, PR",
+   "Location": "-66.0998900000773,18.4423290001858"
+ },
+ {
+   "NAME": "Sacramento, CA",
+   "Location": "-122.39904199978,37.8066649996593"
+ },
+ {
+   "NAME": "Morgan City, LA, Port of",
+   "Location": "-91.2804910001797,29.4202900002263"
+ },
+ {
+   "NAME": "Little Rock, AR, Port of",
+   "Location": "-92.3582810003407,34.790791000257"
+ },
+ {
+   "NAME": "Fort Smith, AR, Port of",
+   "Location": "-94.3854419996581,35.4452020000926"
+ },
+ {
+   "NAME": "Buffalo, NY",
+   "Location": "-78.9094760001434,42.9376330002321"
+ }
+]`;
